@@ -1,0 +1,68 @@
+{
+  "id": "e5b70d32-f6cc-4b14-803d-3645c2011c76",
+  "version": "2.0",
+  "name": "Test example",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "e363dfbb-daef-40ed-b78e-d61c1f5cb821",
+    "name": "Search in google",
+    "commands": [{
+      "id": "c8e409a3-914d-43ea-adda-93c409d6d1e3",
+      "comment": "",
+      "command": "open",
+      "target": "/search?q=Selenium+IDE&sxsrf=AB5stBi_oPj4EsugkqYuJK0Q3nmXgroRXw%3A1688757510042&source=hp&ei=BmWoZPEv5uTFzw_zgbn4AQ&iflsig=AD69kcEAAAAAZKhzFnR4mIWOgDa1wd37shYVHsFNtWsB&ved=0ahUKEwjxyvv7p_3_AhVmcvEDHfNADh8Q4dUDCAk&uact=5&oq=Selenium+IDE&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgcIIxCKBRAnOgQIIxAnOgsIABCKBRCxAxCDAToRCC4QgAQQsQMQgwEQxwEQ0QM6CwgAEIAEELEDEIMBOgcIABCKBRBDOg4ILhCABBCxAxDHARDRAzoICC4QgAQQsQM6CAgAEIAEELEDOggILhCABBDUAjoKCAAQigUQsQMQQzoLCC4QgAQQsQMQ1AI6CAguELEDEIAEOg0IABCKBRCxAxCDARBDOhcILhCABBCxAxCDARDHARCvARCYBRCZBToXCC4QgwEQrwEQxwEQsQMQgAQQmAUQmQVQAFjqHmCLKmgAcAB4AIABrgGIAf8MkgEEMC4xMpgBAKABAQ&sclient=gws-wiz",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85099d42-73d6-45c6-8c89-e74271698062",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "984x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d54b1217-3a6e-49b1-bcf6-a97bd6c37165",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Commands",
+      "targets": [
+        ["linkText=Commands", "linkText"],
+        ["css=.HiHjCd > a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Commands')]", "xpath:link"],
+        ["xpath=//div[@id='rso']/div/div/div/div[3]/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.selenium.dev/selenium-ide/docs/en/api/commands')]", "xpath:href"],
+        ["xpath=//div[3]/div/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Commands')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1cf15122-9041-458a-a839-cd03f9664ec5",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.g > div .kvH3mc .LC20lb",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "24acf960-a996-4d7f-8332-0913a8a49107",
+      "comment": "",
+      "command": "click",
+      "target": "css=.g > div .kvH3mc .LC20lb",
+      "targets": [
+        ["css=.g > div .kvH3mc .LC20lb", "css:finder"],
+        ["xpath=//div[@id='rso']/div[2]/div/div/div/div/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div/div/div/div/div/div/div/a/h3", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "028ab10e-fe75-49ae-8d42-5b2aa82a0465",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e363dfbb-daef-40ed-b78e-d61c1f5cb821"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}
